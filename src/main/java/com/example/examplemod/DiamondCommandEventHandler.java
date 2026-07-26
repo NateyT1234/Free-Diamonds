@@ -34,7 +34,7 @@ public class DiamondCommandEventHandler {
                                     player.drop(diamonds, false);
                                 }
 
-                                source.sendSuccess(() -> Component.literal("Gave you a stack of diamonds!"), true);
+                                source.sendSuccess(() -> Component.literal("You won the lottery and got a stack of diamonds!"), true);
                                 return 1;
                             } catch (Exception e) {
                                 source.sendFailure(Component.literal("Only players can run this command."));
